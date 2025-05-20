@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEVE-TP : site en cours de refonte</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .logo {
+            max-width: 250px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #007f3e;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        
+        p {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #007f3e;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            font-size: 16px;
+        }
+        
+        .button:hover {
+            background-color: #005f2e;
+        }
+        
+        @media (min-width: 768px) {
+            .buttons {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.fntp.fr/sites/default/files/styles/full_width_desktop/public/2023-06/SEVE-TP%20%281%29.png" alt="Logo SEVE-TP" class="logo">
+        <h1>SEVE-TP : site en cours de refonte</h1>
+        <p>SEVE-TP est opérationnel. Nous sommes en train de travailler sur le site de présentation du logiciel. Nous sommes disponibles par e-mail à <a href="mailto:seve@seve-tp.com">seve@seve-tp.com</a></p>
+        <div class="buttons">
+            <a href="https://application.seve-tp.com/#/" class="button">Connectez-vous à SEVE-TP</a>
+            <a href="https://acteurspourlaplanete.fntp.fr/seve-tp/" class="button">Inscrivez-vous à SEVE-TP</a>
+        </div>
+    </div>
+</body>
+</html>
