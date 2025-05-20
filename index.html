@@ -78,6 +78,30 @@
                 justify-content: center;
             }
         }
+
+        .main-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 40px;
+}
+
+.side-image img {
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+    .main-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .side-image img {
+        max-width: 180px;
+    }
+}
     </style>
 </head>
 <body>
