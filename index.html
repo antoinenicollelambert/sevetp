@@ -73,11 +73,12 @@
         }
       
             
-          .download-buttons {
+        .download-buttons-vertical {
               display: flex;
-              flex-direction: column;
-              gap: 1.5rem;
+              flex-direction: column;  /* Cette ligne est la clé pour une disposition verticale */
+              gap: 1.5rem;  /* Espace entre les boutons */
               max-width: 800px;
+              margin: 0 auto;
             }
         
         @media (min-width: 768px) {
@@ -132,12 +133,11 @@
             
              <h1>Les documents utiles 📄</h1>
   
-          <div class="buttons">
-                <p> Voici le guide méthodologique
+          <div class="download-buttons-vertical">
+                
                 <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2025/03/fntp-aplp-seve-tp-methodologiesources-v51-2024.pdf" class="button">
-                Je télécharge le guide méthodologique
                 </a>
-                </p>
+                
                 <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2025/05/fntp-aplp-seve-tp-manuel-utilisateur-v51-2024-vf.pdf" class="button">
                  Je télécharge le manuel utilisateur
                 </a>
