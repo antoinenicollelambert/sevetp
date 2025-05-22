@@ -17,6 +17,7 @@
             color: #4c4b4b;
             line-height: 1.6;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -32,6 +33,7 @@
             width: 100%;
             text-align: center;
             align-items: center;
+            margin-bottom: 20px;
         }
         
         .logo {
@@ -91,84 +93,96 @@
 
         .main-layout {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .content-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
             gap: 40px;
+            width: 100%;
+            margin-bottom: 40px;
         }
 
         .document-card {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
             gap: 40px;
         }
-
-
         
-.side-image img {
-    max-width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
+        .bottom-image {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .bottom-image img {
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
 
-@media (max-width: 900px) {
-    .main-layout {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .side-image img {
-        max-width: 180px;
-    }
-}
+        @media (max-width: 900px) {
+            .content-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            .bottom-image img {
+                max-width: 90%;
+            }
+        }
     </style>
 </head>
     
 <body>
    <div class="main-layout">
-    
-       <div class="container">
-        <div class="title">
-            <img src="logo-seve.png" alt="Logo SEVE-TP" class="logo">
-            <h1>SEVE-TP<br>Site en cours d'amélioration 🎨</h1>
-         </div>
-        
-        <div class="paragraph">
-            <p>Le logiciel SEVE-TP est toujours opérationnel.<br>
-            Nous sommes en train de travailler sur le site de présentation du logiciel.<br>
-            Nous sommes disponibles par e-mail à <a href="mailto:seve@seve-tp.com">seve@seve-tp.com</a></p>
-         </div>
-        
-        <div class="buttons">
-                <a href="https://application.seve-tp.com/#/" class="button">Connectez-vous à SEVE-TP</a>
-                <a href="https://acteurspourlaplanete.fntp.fr/seve-tp/" class="button">Inscrivez-vous à SEVE-TP</a>
+       <div class="content-row">
+           <div class="container">
+                <div class="title">
+                    <img src="logo-seve.png" alt="Logo SEVE-TP" class="logo">
+                    <h1>SEVE-TP<br>Site en cours d'amélioration 🎨</h1>
+                </div>
+                
+                <div class="paragraph">
+                    <p>Le logiciel SEVE-TP est toujours opérationnel.<br>
+                    Nous sommes en train de travailler sur le site de présentation du logiciel.<br>
+                    Nous sommes disponibles par e-mail à <a href="mailto:seve@seve-tp.com">seve@seve-tp.com</a></p>
+                </div>
+                
+                <div class="buttons">
+                    <a href="https://application.seve-tp.com/#/" class="button">Connectez-vous à SEVE-TP</a>
+                    <a href="https://acteurspourlaplanete.fntp.fr/seve-tp/" class="button">Inscrivez-vous à SEVE-TP</a>
+                </div>
+           </div>
+     
+            <div class="container">
+                <h1>Les documents utiles 📄</h1>
+      
+                <div class="download-buttons-vertical">
+                    <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2025/03/fntp-aplp-seve-tp-methodologiesources-v51-2024.pdf" class="button">
+                    Je télécharge le guide méthologique
+                    </a>
+                    
+                    <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2025/05/fntp-aplp-seve-tp-manuel-utilisateur-v51-2024-vf.pdf" class="button">
+                     Je télécharge le manuel utilisateur
+                    </a>
+                    <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2023/06/idrrim-seve-tp-avistechnique-160.pdf" class="button">
+                      Je télécharge la note technique n°160 de l'IDRRIM
+                    </a>
+                    <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2024/10/fntp-aplp-seve-tp-conditions-generales-dutilisation-octobre2023.pdf" class="button">
+                    Je télécharge les conditions générales d'utilisation
+                    </a>
+                </div>
+            </div>
         </div>
-       </div>
- 
-    <div class="container">
         
-             <h1>Les documents utiles 📄</h1>
-  
-          <div class="download-buttons-vertical">
-                
-                <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2025/03/fntp-aplp-seve-tp-methodologiesources-v51-2024.pdf" class="button">
-                Je télécharge le guide méthologique
-                </a>
-                
-                <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2025/05/fntp-aplp-seve-tp-manuel-utilisateur-v51-2024-vf.pdf" class="button">
-                 Je télécharge le manuel utilisateur
-                </a>
-                <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2023/06/idrrim-seve-tp-avistechnique-160.pdf" class="button">
-                  Je télécharge la note technique n°160 de l'IDRRIM
-                </a>
-                <a href="https://acteurspourlaplanete.fntp.fr/wp-content/uploads/2024/10/fntp-aplp-seve-tp-conditions-generales-dutilisation-octobre2023.pdf" class="button">
-                Je télécharge les conditions générales d'utilisation
-                </a>
-         </div>
-    </div>
- </div>
-        <div class="side-image">
+        <div class="bottom-image">
             <img src="canalisation_tp.jpg" alt="Image de projet de canalisation dans les travaux publics" />
         </div>
     </div>
