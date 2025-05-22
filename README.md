@@ -1,3 +1,3 @@
 # sevetp
 
-Pour voir le site : https://totodu77.github.io/sevetp/
+Pour voir le site : https://antoinenicollelambert.github.io/sevetp/
